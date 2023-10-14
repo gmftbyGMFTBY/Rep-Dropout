@@ -149,10 +149,12 @@ Noted that the training args and details are listed under the `config/*.yaml`.
 4. train the riro model (Our proposed)
 
    ```bash
-   ./scripts/train.sh wikitext103 riro 0,1,2,3
+   ./scripts/train.sh wikitext riro 0,1,2,3
    ```
     
 <span id='test with prefix'/>
+
+Note that please set the dataset to `wikitext_dynamic`, if you want to test the performance of scalegrad when only penalizing the repetitions in the prefix (Sec. 6.2 in our paper).
 
 #### 4. Test the Models: <a href='#all_catelogue'>[Back to Top]</a>
 
