@@ -1,0 +1,38 @@
+total_step: 100010
+save_every: 10000
+# I change the token_dropout to hidden_dropout_rate
+hidden_dropout_rate: 0.3
+is_3d_mask: False
+is_layerwise_mask: True
+# n_layer is correspding to the number of the GPT-2 model layers
+n_layer: 12
+r_drop_coeff: -1
+
+# hidden and all drop_mode is depracted, only attention is valid for training
+# drop mode in [``hidden'', ``attention'', ``all'']
+drop_mode: "attention"
+random_dropout: true
+max_len: 256
+
+#
+debug: false
+# train configuration
+train:
+    load_param: true
+    ngram_len: 2
+    lr: 0.00005
+    rep_dropout_rate: 0.6
+    grad_clip: 1.0
+    seed: 0
+    batch_size: 32
+    max_len: 256
+    warmup_ratio: 0.05
+    iter_to_accumulate: 1
+
+test:
+    seed: 0
+    batch_size: 1
+    prefix_max_len: 32
+    generate_len: 128
+    ppl_max_len: 256
+    prefix_len: 32

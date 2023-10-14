@@ -1,0 +1,16 @@
+# generation hyper-parameters
+max_len: 512
+penalty_alpha: 0.6
+top_k: 10
+top_p: 0.7
+random_prefix_len: 5
+sample_num: 2
+decoding_method: sampling
+generate_len: 512
+base_model_name: opt
+# base_model_name: llama
+
+# lora hyper-parameters
+lora_r: 64
+lora_alpha: 16.0
+lora_dropout: 0.1

@@ -1,0 +1,35 @@
+datasets: 
+    wikitext: en
+    wikitext_dynamic: en
+
+tokenizer:
+    en: gpt2
+pretrained_model:
+    en: gpt2
+
+models:
+    # OUR PROPOSED METHOD: RIRO
+    riro:
+        model_name: MyGPT2DynamicDropModel
+        dataset_names: 
+            wikitext: DynamicRepetitionDropoutWikitextDataset
+    # Token-level unlikelihood training
+    unlikelihood: 
+        model_name: MyGPT2UnlikeliHoodModel
+        dataset_names: 
+            wikitext: WikitextDataset
+    gpt2: 
+        model_name: MyGPT2Model
+        dataset_names: 
+            wikitext: WikitextDataset
+    sg:
+        model_name: MyGPT2ModelWithSGLoss
+        dataset_names:
+            wikitext: WikitextDataset
+            wikitext_dynamic: DynamicRepetitionDropoutWikitextDataset
+
+# ========= Global configuration ========== #
+# root_dir: /YOUR/PATH/TO/THE/ROOT/DIR
+root_dir: ..
+version: 1
+# ========= Global configuration ========== #

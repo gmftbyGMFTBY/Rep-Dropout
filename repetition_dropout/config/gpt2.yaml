@@ -1,0 +1,26 @@
+total_step: 100010
+save_every: 10000
+
+debug: false
+
+# train configuration
+train:
+    load_param: true
+    ngram_len: 2
+    lr: 0.00005
+    dropout_rate: 1.0
+    grad_clip: 1.0
+    seed: 0
+    batch_size: 32
+    max_len: 256
+    warmup_ratio: 0.05
+    iter_to_accumulate: 1
+
+test:
+    seed: 0
+    ngram_len: 2
+    batch_size: 1
+    prefix_max_len: 32
+    generate_len: 128
+    ppl_max_len: 256
+    prefix_len: 32

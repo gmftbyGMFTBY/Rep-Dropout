@@ -1,0 +1,16 @@
+models:
+    sft:
+        model_name: LLMSFT
+        agent_name: DeepSpeedAgent
+        dataset: AlpacaInstructionFineTuningDataset
+
+# ========= Global configuration ========== #
+eval_interval: 0.2
+max_dataset_cache_size: 100
+max_seq_length: 2048
+test_max_seq_length: 2048
+warmup_ratio: 0.05
+total_step: 6500
+seed: 0
+epoch: 1
+# ========= Global configuration ========== #
