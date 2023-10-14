@@ -134,31 +134,19 @@ Noted that the training args and details are listed under the `config/*.yaml`.
     ./scripts/train.sh wikitext gpt2 0,1,2,3
     ```
 
-2. train the ditto baseline
-
-   ```bash
-   ./scripts/train.sh wikitext ditto 0,1,2,3
-   ```
-
-3. train the scalegrad baseline
+2. train the scalegrad baseline
 
    ```bash
    ./scripts/train.sh wikitext sg 0,1,2,3
    ```
 
-4. train the token-level unlikelihood training baseline
+3. train the token-level unlikelihood training baseline
 
    ```bash
    ./scripts/train.sh wikitext unlikelihood 0,1,2,3
    ```
-
-5. train the simctg training baseline
-
-   ```bash
-   ./scripts/train.sh wikitext simctg 0,1,2,3
-   ```
    
-6. train the riro model (Our proposed)
+4. train the riro model (Our proposed)
 
    ```bash
    ./scripts/train.sh wikitext103 riro 0,1,2,3
