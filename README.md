@@ -185,12 +185,12 @@ If you have any questions, feel free to contact us via (li.huayang.lh6 at is.nai
 
 #### Citation
 ```
-@inproceedings{
-anonymous2023repetition,
-title={Repetition In Repetition Out: Towards Understanding Neural Text Degeneration from the Data Perspective},
-author={Huayang Li, Tian Lan, Zihao Fu, Deng Cai, Lemao Liu, Nigel Collier, Taro Watanabe, Yixuan Su},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=WjgCRrOgip}
+@misc{li2023repetition,
+      title={Repetition In Repetition Out: Towards Understanding Neural Text Degeneration from the Data Perspective}, 
+      author={Huayang Li and Tian Lan and Zihao Fu and Deng Cai and Lemao Liu and Nigel Collier and Taro Watanabe and Yixuan Su},
+      year={2023},
+      eprint={2310.10226},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
